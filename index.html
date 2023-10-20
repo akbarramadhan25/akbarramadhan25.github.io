@@ -10,6 +10,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <!-- Title icon -->
     <link rel="icon" href="image/A.png">
     <script>
@@ -19,6 +21,9 @@
                 extend : {
                     colors : {
                         primary : '#14b8a6'
+                    },
+                    fontFamily : {
+                        inter : ['inter']
                     }
                 }
             }
@@ -64,7 +69,7 @@
 
     </style>
 </head>
-<body>
+<body style="font-family: 'Times New Roman', Times, serif;">
     <!-- Navbar start -->
     <header class="bg-transparent absolute top-0 l left-0 w-full flex items-center z-10 dark:text-white">
         <div class="container dark:bg-slate-700">
@@ -96,8 +101,7 @@
     <!-- Navbar end -->
     <!-- Hero Section start -->
     <section id="home" class="pt-36 mb-14">
-        <div class="container ">
-            <div class="flex justify-end mr-5">
+         <div class="flex justify-end mr-5">
                 <span class="text-slate-700 mr-2 dark:text-white sm:text-lg">light</span>
                 <input type="checkbox" id="myinput" class="hidden">
                 <label for="myinput" class="hover:cursor-pointer">
@@ -107,11 +111,13 @@
                 </label>
                 <span class="text-slate-700 ml-2 dark:text-white sm:text-lg">dark</span>
             </div>
+        <div class="container ">
+           
             <div class="sm:flex sm:ml-12">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl ">Hallo semua, saya<span class="block font-bold text-slate-900 text-4xl mt-1 dark:text-slate-50">Akbar Ramadhan</span></h1>
-                    <h2 class="font-medium text-slate-600 text-lg mb-5 lg:2xl dark:text-slate-50">Web Developer</h2>
-                    <p class="font-medium text-slate-400  mb-10 leading-relaxed dark:text-slate-50">"Kecerdasan memang membawa seseorang ke puncak, tapi karakter, akan mencegahnya dari kegagalan </p>
+                    <h1 class="text-base font-semibold text-primary sm:text-xl ">Hallo semua, saya<span class="block font-bold text-slate-900  mt-1 dark:text-slate-50 sm:text-4xl ">Akbar Ramadhan</span></h1>
+                    <h2 class="font-medium text-slate-600 text-lg mb-5 sm:text-2xl dark:text-slate-50">Web Developer</h2>
+                    <p class="font-medium text-slate-400  mb-10 leading-relaxed sm:text-2xl dark:text-slate-50">"Kecerdasan memang membawa seseorang ke puncak, tapi karakter, akan mencegahnya dari kegagalan </p>
 
                     <a href="#contact" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration ease-in-out">Hubungi saya</a>
                 </div>
