@@ -32,5 +32,15 @@ button.addEventListener('click', function() {
     })
 })
 
+const input = document.getElementById('myinput')
+input.addEventListener('click' , () => {
+    if ( input.checked ) {
+        document.body.classList.add('dark')
+    }
+    else {
+        document.body.classList.remove('dark')
+    }
+})
+
 
 
