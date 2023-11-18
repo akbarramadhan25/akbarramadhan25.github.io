@@ -26,8 +26,9 @@ const button = document.getElementById('button')
 button.addEventListener('click', function() {
     Swal.fire({
         title: 'Yeay!',
-        text: 'Your massage has been sent to akbar',
+        text: 'Pesanmu sudaa terkirim ke akbar',
         icon: 'succes',
+        showConfirmButton : true,
         confirmButtonText: 'OK'
     })
 })
