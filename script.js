@@ -23,15 +23,54 @@ window.onscroll = function () {
 const button = document.getElementById('button')
 
 
-button.addEventListener('click', function() {
-    Swal.fire({
-        title: 'Yeay!',
-        text: 'Pesanmu sudaa terkirim ke akbar',
-        icon: 'succes',
-        showConfirmButton : true,
-        confirmButtonText: 'OK'
-    })
-})
+// button.addEventListener('click', function() {
+    // Swal.fire({
+    //     title: 'Yeay!',
+    //     text: 'Pesanmu sudaa terkirim ke akbar',
+    //     icon: 'succes',
+    //     showConfirmButton : true,
+    //     confirmButtonText: 'OK'
+    // })
+// })
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Temukan formulir dan tombol
+        const form = document.querySelector('form');
+        const submitButton = document.querySelector('button[type="submit"]');
+
+        // Tambahkan event listener untuk meng-handle submit form
+        form.addEventListener('submit', function (event) {
+            // Cek apakah input dan textarea diisi
+            const nameInput = document.getElementById('name').value;
+            const emailInput = document.getElementById('email').value;
+            const messageInput = document.getElementById('massage').value;
+
+            if (!nameInput || !emailInput || !messageInput) {
+                // Jika salah satu input atau textarea kosong, munculkan alert
+                Swal.fire({
+                    title: 'Oops!',
+                    text: 'kolomnya diisi semua dong',
+                    icon: 'error',
+                    showConfirmButton : true,
+                    confirmButtonText: 'OK'
+                })
+                // Mencegah formulir dikirim jika ada yang kosong
+                event.preventDefault();
+            } else {
+                // Jika semuanya terisi, tambahkan logika pengiriman formulir di sini (jika diperlukan)
+                // Contoh: form.submit();
+                Swal.fire({
+                    title: 'Yeay!',
+                    text: 'Pesanmu sudaa terkirim ke akbar',
+                    icon: 'success',
+                    showConfirmButton : true,
+                    confirmButtonText: 'OK'
+                })
+            }
+        });
+    });
+
+
 
 const input = document.getElementById('myinput')
 input.addEventListener('click' , () => {
