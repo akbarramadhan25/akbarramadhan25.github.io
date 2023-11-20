@@ -6,6 +6,14 @@ hamburger.addEventListener('click', function () {
     navbar.classList.toggle('hidden')
 })
 
+// menutup sidebar nav diluar kotak
+document.addEventListener('click', function(e) {
+    if(!hamburger.contains(e.target) && !navbar.contains(e.target)) {
+        navbar.classList.add('hidden')
+        hamburger.classList.remove('hamburger-active')
+    }
+})
+
 
 
 window.onscroll = function () {
@@ -43,7 +51,7 @@ const button = document.getElementById('button')
             // Cek apakah input dan textarea diisi
             const nameInput = document.getElementById('name').value;
             const emailInput = document.getElementById('email').value;
-            const messageInput = document.getElementById('massage').value;
+            const messageInput = document.getElementById('message').value;
 
             if (!nameInput || !emailInput || !messageInput) {
                 // Jika salah satu input atau textarea kosong, munculkan alert
@@ -54,6 +62,7 @@ const button = document.getElementById('button')
                     showConfirmButton : true,
                     confirmButtonText: 'OK'
                 })
+
                 // Mencegah formulir dikirim jika ada yang kosong
                 event.preventDefault();
             } else {
