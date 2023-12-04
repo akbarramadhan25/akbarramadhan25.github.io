@@ -51,7 +51,7 @@ const button = document.getElementById('button')
             // Cek apakah input dan textarea diisi
             const nameInput = document.getElementById('name').value;
             const emailInput = document.getElementById('email').value;
-            const messageInput = document.getElementById('message').value;
+            const messageInput = document.getElementById('message').value.trim();
 
             if (!nameInput || !emailInput || !messageInput) {
                 // Jika salah satu input atau textarea kosong, munculkan alert
