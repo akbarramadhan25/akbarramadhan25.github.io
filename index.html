@@ -71,6 +71,10 @@
         .dark {
             background-color: rgb(29, 31, 33);
         }
+        .list-transition {
+            @apply transition-all
+            @apply duration-1000
+        }
 
     </style>
 </head>
@@ -89,7 +93,7 @@
                         <span class="hamburger-line origin-bottom-left transition duration-300 bg-white" style="background-color: white;"></span>
                     </button>
                     <nav id="nav-menu" class="hidden absolute py-5  shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:flex lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none bg-slate-800">
-                        <ul class="block lg:flex ">
+                        <ul class="block lg:flex transition-all duration-100" id="nav-list">
                             <li class="group flex "><a href="#home" class="text-base py-4  mx-8 group-hover:text-white text-yellow-500 transition-all duration-200" >Beranda</a></li>
                             <li class="group flex"><a href="#about" class="text-base py-4  mx-8 group-hover:text-white transition-all text-yellow-500 duration-200" >Tentang saya</a></li>
                             <li class="group flex"><a href="#skill" class="text-base py-4  mx-8 group-hover:text-white transition-all duration-1000 text-yellow-500"  >Skill</a></li>
@@ -121,10 +125,10 @@
                 <div class="w-full self-center px-4 lg:w-1/2">
                     <h1 class="text-base font-semibold text-yellow-500 sm:text-2xl ">Hai, semuanya. saya <span class="block font-bold text-white  mt-1 dark:text-slate-50 text-4xl md:text-6xl
                         ">Akbar Ramadhan</span></h1>
-                    <h2 class="font-semibold text-yellow-500 text-lg mb-5 sm:text-xl dark:text-yellow-500">Web Developer</h2>
+                    <h2 class="font-semibold text-yellow-500 text-lg mb-5 sm:text-xl dark:text-yellow-500">Frontend Engineer</h2>
                     <p class="italic text-white  mb-10 text-sm leading-relaxed sm:text-lg dark:text-slate-50">"Kecerdasan memang membawa seseorang ke puncak, tapi karakter, akan mencegahnya dari kegagalan."</p>
 
-                    <a href="#contact" class="text-base font-semibold text-white bg-yellow-500 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration ease-in-out">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1Ke-CaJwrbLfMV_bifht76-R8Tm8x91P1/view?usp=drivesdk" class="text-base font-semibold text-white bg-yellow-500 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration ease-in-out">Download CV</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2 pb-5">
                     <div class="mt-10 lg:mt-0 lg:right-0">
@@ -145,7 +149,7 @@
             </div>
             <div class="w-full p-8 -mb-20" data-aos="fade-up" data-aos-duration="2000">
                 <h1 class="font-bold text-slate-900 text-xl pb-4 lg:text-2xl dark:text-white">Yuk kenalan sama <span class="text-yellow-500">Akbar!</span></h1>
-                <p class="font-medium text-slate-800 text-sm dark:text-white">Hallo, namaku Akbar Ramadhan, biasa dipanggil akbar. Lahir di Jakarta, Indonesia. Saya seorang Junior Front-end Developer,memiliki minat dan antusiasme tinggi dalam dunia IT khususnya Web Developer. menguasai HTML, CSS, Javascript , DOM , Javascript ES6 ,framework Bootstrap , Tailwind , Git , dan Github. Memiliki kemampuan problem solving, komunikasi, dan kerja sama tim yang cukup baik. Berwawasan terbuka, saya bertemu orang dan beradaptasi dengan perubahan. Saya percaya bahwa seseorang harus mulai mengembangkan keterampilan profesional dan mempelajari hal-hal baru.</p>
+                <p class="font-medium text-slate-800 text-sm dark:text-white">Hallo, namaku Akbar Ramadhan, biasa dipanggil akbar. Lahir di Jakarta, Indonesia. Saya seorang Junior Front-end Developer,memiliki minat dan antusiasme tinggi dalam dunia IT khususnya Web Developer. menguasai HTML, CSS, Javascript, DOM, Javascript ES6, framework Bootstrap, React, Tailwind, Git , dan Github. Memiliki kemampuan problem solving, komunikasi, dan kerja sama tim yang cukup baik. Berwawasan terbuka, saya bertemu orang dan beradaptasi dengan perubahan. Saya percaya bahwa seseorang harus mulai mengembangkan keterampilan profesional dan mempelajari hal-hal baru.</p>
 
                 <div class="flex items-center mt-4">
                     <!-- Instagram -->
@@ -198,6 +202,11 @@
             sm:w-[240px] flex justify-center items-center sm:h-[240px] 
             hover:scale-90 transition-all duration-300">
                 <img src="image/mygithub.png" alt="" width="230px" height="250px">    
+            </div>
+            <div class=" bg-white rounded-lg shadow-2xl shadow-black p-5 
+            sm:w-[240px] flex justify-center items-center sm:h-[240px] 
+            hover:scale-90 transition-all duration-300 mt-5">
+                <img src="image/react.png" alt="" width="230px" height="220px">    
             </div>
         </div>
         
@@ -252,8 +261,8 @@
                     <div class="rounded-md shadow-md overflow-hidden md:p-10">
                         <img src="image/movies.jpeg" alt="" class="w-full">
                     </div>
-                    <h3 class="font-semibold text-xl mt-5 mb-5 text-yellow-500">Pencarian Data Film</h3>
-                    <p class="text-base font-medium text-slate-600 dark:text-white">Website sederhana pencarian data film</p>
+                    <h3 class="font-semibold text-xl mt-5 mb-5 text-yellow-500">Pencarian Film</h3>
+                    <p class="text-base font-medium text-slate-600 dark:text-white">Website sederhana pencarian film</p>
                     <a href="https://barmovies-alpha.vercel.app/" class="font-medium text-primary mt-8 mb-3 underline">Kunjungi</a>
                 </div>
             </div>
@@ -262,7 +271,7 @@
 
     <!-- Project end -->
     <!-- Sertifikat start -->
-    <section id="certificate" class="pb-5 pt-10 bg-green-950 dark:bg-slate-800">
+    <section id="certificate" class="pb-5 pt-16 bg-green-950 dark:bg-slate-800">
         <div class="container">
             <div class="w-full">
                 <h2 class="font-bold text-lg md:text-2xl text-white text-center -mt-5 dark:text-white">My <span class="text-yellow-500"> Certificate</span></h2>
@@ -291,6 +300,11 @@
                 <div class="mb-12">
                     <img src="image/myskill.png" alt="" >
                     <h3 class="font-bold text-white text-center py-4 dark:text-white">Javascript</h3>
+                    <h5 class="font-medium text-base text-blue-600 text-center"><a href="https://drive.google.com/file/d/1-Sg2g_cmAF-wyZuZpJgUNk69NENbZLZZ/view?usp=drivesdk"  class="underline">Klik untuk melihat</a></h5>
+                </div>
+                <div class="mb-12">
+                    <img src="image/myskill.png" alt="" >
+                    <h3 class="font-bold text-white text-center py-4 dark:text-white">React</h3>
                     <h5 class="font-medium text-base text-blue-600 text-center"><a href="https://drive.google.com/file/d/1-Sg2g_cmAF-wyZuZpJgUNk69NENbZLZZ/view?usp=drivesdk"  class="underline">Klik untuk melihat</a></h5>
                 </div>
             </div>
