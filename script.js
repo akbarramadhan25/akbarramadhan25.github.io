@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const submitButton = document.querySelector('button[type="submit"]');
 
   // Tambahkan event listener untuk meng-handle submit form
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", function () {
     // Cek apakah input dan textarea diisi
     const nameInput = document.getElementById("name").value;
     const emailInput = document.getElementById("email").value;
@@ -58,9 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
         showConfirmButton: true,
         confirmButtonText: "OK",
       });
-
-      // Mencegah formulir dikirim jika ada yang kosong
-      event.preventDefault();
     } else {
       // Jika semuanya terisi, tambahkan logika pengiriman formulir di sini (jika diperlukan)
       // Contoh: form.submit();
