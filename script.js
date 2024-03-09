@@ -1,6 +1,5 @@
 const hamburger = document.getElementById("hamburger");
 const navbar = document.getElementById("nav-menu");
-const navList = document.getElementById("nav-list");
 
 hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("hamburger-active");
@@ -12,7 +11,6 @@ document.addEventListener("click", function (e) {
   if (!hamburger.contains(e.target) && !navbar.contains(e.target)) {
     navbar.classList.add("hidden");
     hamburger.classList.remove("hamburger-active");
-    navList.classList.add("list-transition");
   }
 });
 
