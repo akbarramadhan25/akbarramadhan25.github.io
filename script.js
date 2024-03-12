@@ -1,16 +1,15 @@
-const hamburger = document.getElementById("hamburger");
-const navbar = document.getElementById("nav-menu");
+const menuToggle = document.querySelector(".menu-toggle");
+const list = document.querySelector(".list-items");
 
-hamburger.addEventListener("click", function () {
-  hamburger.classList.toggle("hamburger-active");
-  navbar.classList.toggle("hidden");
+menuToggle.addEventListener("click", function () {
+  this.classList.toggle("hamburger-active");
+  list.classList.toggle("top-16");
 });
 
-// menutup sidebar nav diluar kotak
 document.addEventListener("click", function (e) {
-  if (!hamburger.contains(e.target) && !navbar.contains(e.target)) {
-    navbar.classList.add("hidden");
-    hamburger.classList.remove("hamburger-active");
+  if (!menuToggle.contains(e.target) && !list.contains(e.target)) {
+    list.classList.remove("top-16");
+    menuToggle.classList.remove("hamburger-active");
   }
 });
 

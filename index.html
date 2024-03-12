@@ -76,33 +76,49 @@
 </head>
 <body class="font-Poppins overflow-x-hidden">
     <!-- Navbar start -->
-    <header class="bg-transparent absolute top-0 l left-0 w-full right-0 flex items-center z-10 dark:text-white ">
-        <div class="container dark:bg-slate-800 bg-green-950">
-            <div class="flex items center justify-between relative">
-                <div class="px-4 ">
-                    <a href="#home" class="font-bold py-6 hover:border-b-yellow-500 hover:duration-500 text-yellow-500 text-lg block">akbarramadhan</a>
-                </div>
-                <div class="flex items-center">
-                    <button id="hamburger" class="block absolute right-4 md:hidden">
-                        <span class="hamburger-line origin-top-left transition duration-300" style="background-color: white;"></span>
-                        <span class="hamburger-line transition duration-300 " style="background-color: white;"></span>
-                        <span class="hamburger-line origin-bottom-left transition duration-300 bg-white" style="background-color: white;"></span>
-                    </button>
-                    <nav id="nav-menu" class="hidden absolute py-5 shadow-lg rounded-lg max-w-[250px] w-full right-0 top-full lg:flex lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none bg-slate-800">
-                        <ul class="block md:flex">
-                            <li class="group flex"><a href="#home" class="text-base py-4  mx-8 group-hover:text-white text-yellow-500 transition-all duration-200" >Beranda</a></li>
-                            <li class="group flex"><a href="#about" class="text-base py-4  mx-8 group-hover:text-white transition-all text-yellow-500 duration-200" >Tentang saya</a></li>
-                            <li class="group flex"><a href="#skill" class="text-base py-4  mx-8 group-hover:text-white transition-all duration-1000 text-yellow-500"  >Skill</a></li>
-                            <li class="group flex"><a href="#project" class="text-base py-4 mx-8 group-hover:text-white transition-all duration-200 text-yellow-500" >Project</a></li>
-                            <li class="group flex"><a href="#certificate" class="text-base py-4  mx-8 group-hover:text-white text-yellow-500 transition-all duration-200" >Sertifikat</a></li>
-                            <li class="group flex"><a href="#contact" class="text-base py-4  mx-8 group-hover:text-white text-yellow-500 transition-all duration-1000" >Kontak saya</a></li>
-                            
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+    <nav
+    class="flex justify-between px-[3%] items-center bg-green-950 py-5"
+    id="nav"
+  >
+    <h3 class="text-yellow-500 font-bold">akbarramadhan</h3>
+    <div class="flex items-center justify-center">
+      <ul
+        class="list-items block absolute md:static md:flex items-center justify-center gap-7 left-0 -top-56 right-0 bg-green-950"
+      >
+        <li class="text-yellow-500 hover:text-white mx-4 md:mx-0 my-3">
+          <a href="#home" class="text-sm">Home</a>
+        </li>
+        <li class="text-yellow-500 hover:text-white mx-4 md:mx-0 my-3">
+          <a href="#about" class="text-sm">About</a>
+        </li>
+        <li class="text-yellow-500 hover:text-white mx-4 md:mx-0 my-3">
+          <a href="#skill" class="text-sm">Skill</a>
+        </li>
+        <li class="text-yellow-500 hover:text-white mx-4 md:mx-0 my-3">
+          <a href="#project" class="text-sm">Project</a>
+        </li>
+        <li class="text-yellow-500 hover:text-white mx-4 md:mx-0 my-3">
+          <a href="#certificate" class="text-sm">Certificate</a>
+        </li>
+        <li class="text-yellow-500 hover:text-white mx-4 md:mx-0 my-3">
+          <a href="#contact" class="text-sm">Contact</a>
+        </li>
+      </ul>
+      <div
+        class="menu-toggle flex flex-col h-[20px] md:hidden justify-between ml-6 cursor-pointer"
+      >
+        <span
+          class="block w-[29px] h-[3px] bg-yellow-500 rounded-sm origin-top-left transition duration-200"
+        ></span>
+        <span
+          class="block w-[28px] h-[3px] bg-yellow-500 rounded-sm transition duration-200"
+        ></span>
+        <span
+          class="block w-[28px] h-[3px] bg-yellow-500 rounded-sm origin-bottom-left transition duration-200"
+        ></span>
+      </div>
+    </div>
+  </nav>
     <!-- Navbar end -->
     <!-- Hero Section start -->
     <section id="home" class="pt-36 pb-14 bg-green-950 dark:bg-slate-800">
@@ -115,7 +131,7 @@
                     </div>
                 </label>
             </div>
-        <div class="container " data-aos="fade-up" data-aos-duration="2000">
+        <div class="container px-auto" data-aos="fade-up" data-aos-duration="2000">
            
             <div class="sm:flex sm:ml-12">
                 <div class="w-full self-center px-4 lg:w-1/2">
@@ -124,7 +140,7 @@
                     <h2 class="font-semibold text-yellow-500 text-lg mb-5 sm:text-xl dark:text-yellow-500">Frontend Engineer</h2>
                     <p class="italic text-white  mb-10 text-sm leading-relaxed sm:text-lg dark:text-slate-50">"Kecerdasan memang membawa seseorang ke puncak, tapi karakter, akan mencegahnya dari kegagalan."</p>
 
-                    <a href="https://drive.google.com/file/d/1Ke-CaJwrbLfMV_bifht76-R8Tm8x91P1/view?usp=drivesdk" class="text-base font-semibold text-white bg-yellow-500 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration ease-in-out">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1NFU1GWDRcirKM7UZJbQ99lzeYE9WLUgZ/view?usp=drivesdk" class="text-base font-semibold text-white bg-yellow-500 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration ease-in-out">Download CV</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2 pb-5">
                     <div class="mt-10 lg:mt-0 lg:right-0">
@@ -199,7 +215,7 @@
             hover:scale-90 transition-all duration-300">
                 <img src="image/mygithub.png" alt="" width="230px" height="250px">    
             </div>
-            <div class=" bg-white rounded-lg shadow-2xl shadow-black p-5 
+            <div class=" bg-white rounded-lg shadow-2xl shadow-black p-5 mt-4 md:mt-0
             sm:w-[240px] flex justify-center items-center sm:h-[240px] 
             hover:scale-90 transition-all duration-300">
                 <img src="image/react.png" alt="" width="230px" height="220px">    
