@@ -79,3 +79,32 @@ input.addEventListener("click", () => {
     document.body.classList.remove("dark");
   }
 });
+
+const myText = ['Frontend Engineer', 'UI/UX Designer']
+let text = 0
+let indexCharacterText = 0
+let letter = ''
+let currentText = ''
+
+function type() {
+  if (text == myText.length) {
+    text = 0
+  }
+
+  currentText = myText[text]
+
+  letter = currentText.slice(0, ++indexCharacterText)
+
+  document.getElementById('title').textContent = letter
+
+  if(letter.length == currentText.length) {
+    text++
+    indexCharacterText = 0
+    setTimeout(type, 2000)
+  }else {
+    setTimeout(type, 200)
+  }
+  
+}
+type()
+
